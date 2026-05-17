@@ -92,7 +92,7 @@ export async function generateStaticParams() {
   
   return files.map(file => ({
     slug: file.replace(".md", ""),
-  })) as Promise<{ slug: string }[]>;
+  }));
 }
 
 export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
