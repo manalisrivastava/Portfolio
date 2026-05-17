@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "title": "Product",
+      "items": [
+        "Product discovery",
+        "Roadmapping (RICE)",
+        "User research",
+        "PRDs & user stories",
+        "Agile / Scrum",
+        "Stakeholder management",
+        "A/B testing",
+        "Sprint planning"
+      ]
+    },
+    {
+      "title": "FinTech & Regulated",
+      "items": [
+        "KYC / AML",
+        "PSD2 / SCA",
+        "Open Banking",
+        "Transaction monitoring",
+        "Fraud prevention",
+        "GDPR / DPDP",
+        "Merchant onboarding",
+        "FCA-regulated workflows"
+      ]
+    },
+    {
+      "title": "Data & AI",
+      "items": [
+        "SQL",
+        "Mixpanel",
+        "GA4",
+        "Power BI",
+        "Funnel & cohort analysis",
+        "API integrations",
+        "Claude Code",
+        "AI-assisted delivery"
+      ]
+    }
+  ]
+}

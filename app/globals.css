@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: #FAFAF7;
+  --color-surface: #FFFFFF;
+  --color-text: #1A1A1A;
+  --color-muted: #5C5C5C;
+  --color-border: #E5E5E0;
+  --color-accent: #C4622D;
+  --color-accent-soft: #F5E9E2;
+
+  --font-serif: 'Instrument Serif', 'Fraunces', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.case-study-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+  animation: float-card 10s ease-in-out infinite alternate;
+}
+
+.case-study-card:hover {
+  background: var(--color-accent);
+  transform: translateY(-8px);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+}
+
+.case-study-card:hover h3,
+.case-study-card:hover p,
+.case-study-card:hover .case-study-link,
+.case-study-card:hover .case-study-metric,
+.case-study-card:hover .case-study-tag {
+  color: #ffffff;
+}
+
+.case-study-card:hover .case-study-tag {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.case-study-card:hover .case-study-link {
+  opacity: 0.95;
+}
+
+.case-study-link {
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.case-study-tag {
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+@keyframes float-card {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
