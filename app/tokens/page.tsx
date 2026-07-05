@@ -11,7 +11,7 @@ export default function TokensPage() {
 
   const type = [
     { label: "Serif — Instrument Serif", family: "'Instrument Serif', Georgia, serif", sample: "Building at the intersection of payments, compliance, and AI." },
-    { label: "Sans — Inter", family: "'Inter', system-ui, sans-serif", sample: "Co-founder turned PM. Shipped an AI-enabled platform from 0 → £300K+ ARR." },
+    { label: "Sans — Inter", family: "'Inter', system-ui, sans-serif", sample: "Founder turned PM. Shipped an AI-enabled platform from 0 → £870K+ ARR." },
   ];
 
   const spacing = [

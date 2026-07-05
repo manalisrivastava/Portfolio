@@ -8,16 +8,18 @@ const caseStudies: CaseStudyCardType[] = [
   {
     slug: "mbk",
     title: "MBK Early Years",
-    oneLiner: "Designed onboarding workflows, SOPs, and an internal CRM for a £250K+ regulated business serving 3,000+ clients.",
+    oneLiner: "Designed onboarding workflows, SOPs, and an internal CRM for a £250K+ regulated business serving 14,000+ clients.",
     tags: ["Ops", "CRM design", "GDPR", "Systems"],
     metric: "40% reduction in onboarding friction",
+    date: "Jan 2026 - Present",
   },
   {
     slug: "shasymitra",
     title: "ShasyMitra",
-    oneLiner: "Co-founded an AI-enabled advisory and payments platform serving 2,000+ farmers across 5 Indian states.",
+    oneLiner: "Founded an AI-enabled advisory and payments platform serving 21,000+ farmers across 5 Indian states.",
     tags: ["0-to-1", "AI product", "Payments", "Marketplace"],
-    metric: "£300K+ ARR",
+    metric: "£870K+ ARR",
+    date: "Mar 2022 - Jun 2024",
   },
   {
     slug: "payswift",
@@ -25,6 +27,7 @@ const caseStudies: CaseStudyCardType[] = [
     oneLiner: "Optimised merchant onboarding and payment monitoring across PSD2, KYC, and AML workflows for 50+ SMB clients.",
     tags: ["Payments", "Compliance", "Onboarding", "SQL"],
     metric: "£500K+ revenue recovered",
+    date: "Jun 2020 - Feb 2021",
   },
 ];
 

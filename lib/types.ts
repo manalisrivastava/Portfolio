@@ -5,6 +5,7 @@ export type CaseStudyCard = {
   tags: string[];
   thumbnail?: string;
   metric?: string;
+  date?: string;
 };
 
 export type CaseStudyFrontmatter = {

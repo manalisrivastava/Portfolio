@@ -1,7 +1,8 @@
 ---
 title: "MBK Early Years: Scaling Operations & Client Experience in a Regulated Service Business"
-role: "Product and Operations Manager"
-scale: "3,000+ Clients | £250K+ Regulated Business | Cross-functional Operations & Product Optimisation"
+role: "Product Manager (Client Accounts)"
+duration: "Jan 2026 - Present"
+scale: "14,000+ Clients | £250K+ Regulated Business | Cross-functional Operations & Product Optimisation"
 ---
 
 ## 1. Vision & The Problem
@@ -20,7 +21,7 @@ I worked across Product, Operations, and Leadership to redesign workflows, impro
 
 ### The Operational Core: Workflow & Systems Optimisation
 
-1. **End-to-End Onboarding Design:** Designed onboarding workflows and operational SOPs for a £250K+ regulated business serving 3,000+ clients.
+1. **End-to-End Onboarding Design:** Designed onboarding workflows and operational SOPs for a £250K+ regulated business serving 14,000+ clients.
 2. **CRM Workflow Architecture:** Built CRM systems across 15+ interconnected data dependencies to improve lifecycle tracking and operational visibility.
 3. **Workflow Standardisation:** Created SOPs and structured operational processes to reduce ambiguity and improve execution consistency across teams.
 4. **Consent & Compliance Flows:** Defined GDPR-compliant onboarding and consent workflows, reducing onboarding friction and manual handling by 40%.

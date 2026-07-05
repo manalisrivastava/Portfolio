@@ -1,7 +1,8 @@
 ---
 title: "Payswift: Scaling Trust & Compliance in Digital Payments"
-role: "Associate Product Intern, Payments & Compliance"
-scale: "50+ SMB Merchants | £1M+ Payment Monitoring Scope | Cross-functional Compliance & Risk Operations"
+role: "Product Intern, Payments & Compliance"
+duration: "Jun 2020 - Feb 2021"
+scale: "50+ SMB Merchants | £15M+ Payment Monitoring Scope | Cross-functional Compliance & Risk Operations"
 ---
 
 ## 1. Vision & The Problem
@@ -26,7 +27,7 @@ I supported Product, Compliance, and Risk teams in improving onboarding workflow
 
 ### The Operational Extension: Risk & Compliance Collaboration
 
-1. **CDD & Sanctions Monitoring:** Worked alongside Compliance and Risk teams to support customer due diligence, sanctions screening, and monitoring flows for £1M+ payments.
+1. **CDD & Sanctions Monitoring:** Worked alongside Compliance and Risk teams to support customer due diligence, sanctions screening, and monitoring flows for £15M+ payments.
 2. **Cross-functional Coordination:** Partnered with QA, Compliance, Product, and Operations teams to reduce release inefficiencies and improve workflow clarity.
 
 ## 3. Fintech, Payments & Compliance
@@ -36,7 +37,7 @@ A key focus of my work was ensuring that compliance requirements strengthened tr
 1. **Merchant Activation Improvements:** Funnel analysis and onboarding optimisation improved onboarding completion rates by 12–20%.
 2. **Compliance Translation:** Helped convert complex PSD2, AML, KYC, and SCA requirements into structured product workflows, reducing QA rework by 25%.
 3. **Payment Reliability:** Investigated Faster Payments logs and payment failures, helping prevent £500K+ in potential revenue impact.
-4. **Risk Monitoring Support:** Contributed to customer due diligence and transaction monitoring processes supporting £1M+ payment operations.
+4. **Risk Monitoring Support:** Contributed to customer due diligence and transaction monitoring processes supporting £15M+ payment operations.
 
 ## 4. Key Product Decisions
 

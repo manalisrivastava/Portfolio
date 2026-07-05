@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { CaseStudyCard as CaseStudyCardType } from "@/lib/types";
 
-export default function CaseStudyCard({ slug, title, oneLiner, tags, thumbnail, metric }: CaseStudyCardType) {
+export default function CaseStudyCard({ slug, title, oneLiner, tags, thumbnail, metric, date }: CaseStudyCardType) {
   return (
     <Link
       href={`/work/${slug}`}
@@ -39,6 +39,8 @@ export default function CaseStudyCard({ slug, title, oneLiner, tags, thumbnail, 
             (tag as HTMLElement).style.background = "rgba(255, 255, 255, 0.16)";
           });
           if (link) (link as HTMLElement).style.color = "#ffffff";
+          const dateEl = card.querySelector('.case-study-date');
+          if (dateEl) (dateEl as HTMLElement).style.color = "rgba(255,255,255,0.75)";
         }}
         onMouseLeave={(e) => {
           const card = e.currentTarget as HTMLElement;
@@ -60,6 +62,8 @@ export default function CaseStudyCard({ slug, title, oneLiner, tags, thumbnail, 
             (tag as HTMLElement).style.background = "var(--color-accent-soft)";
           });
           if (link) (link as HTMLElement).style.color = "var(--color-accent)";
+          const dateEl = card.querySelector('.case-study-date');
+          if (dateEl) (dateEl as HTMLElement).style.color = "var(--color-muted)";
         }}
       >
         {thumbnail && (
@@ -81,12 +85,27 @@ export default function CaseStudyCard({ slug, title, oneLiner, tags, thumbnail, 
               fontSize: "24px",
               fontWeight: 400,
               color: "var(--color-text)",
-              marginBottom: "10px",
+              marginBottom: "4px",
               lineHeight: 1.2,
             }}
           >
             {title}
           </h3>
+
+          {date && (
+            <p
+              className="case-study-date"
+              style={{
+                fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
+                fontSize: "12px",
+                color: "var(--color-muted)",
+                marginBottom: "10px",
+                fontWeight: 500,
+              }}
+            >
+              {date}
+            </p>
+          )}
 
           <p
             style={{

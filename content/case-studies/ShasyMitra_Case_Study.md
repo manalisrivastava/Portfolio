@@ -1,7 +1,7 @@
 # ShasyMitra: Bridging the Trust Gap in Agtech
 
-**Role:** Co-Founder & Product Lead
-**Scale:** 2,000+ Farmers | 5+ Indian States | £300K+ ARR
+**Role:** Founder & Product Lead
+**Scale:** 21,000+ Farmers | 5+ Indian States | £870K+ ARR
 
 ---
 
@@ -37,7 +37,7 @@ I led a cross-functional team of **15+ members** to build a hybrid model that ad
 A core pillar of my strategy was solving the "payment anxiety" farmers felt when dealing with buyers.
 
 - **Payment Confirmation Workflows:** Introduced standardized digital confirmation for crop sales, which reduced support queries by 25%.
-- **Transaction Visibility:** By improving onboarding and visibility for supplier partnerships, we drove a 20% improvement in transaction efficiency, contributing to £300K+ ARR.
+- **Transaction Visibility:** By improving onboarding and visibility for supplier partnerships, we drove a 20% improvement in transaction efficiency, contributing to £870K+ ARR.
 - **Compliance & Security:** Translated DPDP compliance and identity verification into seamless onboarding journeys, reducing release rework by 20%.
 
 ---
@@ -61,8 +61,8 @@ The following strategic choices defined the product's market-fit and defensibili
 | Metric | Result |
 |---|---|
 | Store Expansion | 400% increase (1 to 5 outlets) in 3 months |
-| Revenue Growth | **£300K+ ARR** and **INR 12 lakh** in additional retail revenue |
-| Farmer Adoption | **2,000+ users** with **72% intent** to use weekly advisory |
+| Revenue Growth | **£870K+ ARR** and **INR 12 lakh** in additional retail revenue |
+| Farmer Adoption | **21,000+ users** with **72% intent** to use weekly advisory |
 | Support Efficiency | **25% reduction** in payment-related support queries |
 
 ---
