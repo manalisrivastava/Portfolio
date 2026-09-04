@@ -32,10 +32,9 @@ function renderParagraph(text: string, key: number, style?: React.CSSProperties)
 
 interface Props {
   paragraphs: string[];
-  profileExists: boolean;
 }
 
-export default function AboutContent({ paragraphs, profileExists }: Props) {
+export default function AboutContent({ paragraphs }: Props) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -69,13 +68,13 @@ export default function AboutContent({ paragraphs, profileExists }: Props) {
       <div style={{
         position: "absolute", width: "260px", height: "260px",
         top: "40px", right: "-60px", borderRadius: "50%",
-        background: "#C4622D", opacity: 0.12, zIndex: 0,
+        background: "#E84714", opacity: 0.10, zIndex: 0,
         animation: "floatA 7s ease-in-out infinite",
       }} />
       <div style={{
         position: "absolute", width: "160px", height: "160px",
         top: "38%", left: "-50px", borderRadius: "50%",
-        background: "#A8481E", opacity: 0.10, zIndex: 0,
+        background: "#E84714", opacity: 0.07, zIndex: 0,
         animation: "floatB 9s ease-in-out infinite",
         animationDelay: "1.5s",
       }} />
@@ -89,51 +88,25 @@ export default function AboutContent({ paragraphs, profileExists }: Props) {
         }}
         className="about-grid"
       >
-        {/* Photo column */}
-        <div style={reveal(0)}>
-          {profileExists ? (
-            <div style={{
-              width: "100%", aspectRatio: "4/5", borderRadius: "12px",
-              background: "var(--color-accent-soft)", overflow: "hidden",
-              display: "flex", alignItems: "center", justifyContent: "center",
-            }}>
-              <Image
-                src="/images/profile.jpg"
-                alt="Manali Srivastava"
-                width={400}
-                height={500}
-                style={{
-                  width: "100%", height: "100%", objectFit: "cover",
-                  mixBlendMode: "multiply",
-                  filter: "sepia(1) saturate(2.5) hue-rotate(340deg) brightness(0.85)",
-                }}
-              />
-            </div>
-          ) : (
-            <div style={{
-              width: "100%", aspectRatio: "4/5", borderRadius: "12px",
-              background: "var(--color-accent-soft)",
-              display: "flex", alignItems: "center", justifyContent: "center",
-            }}>
-              <span style={{
-                fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
-                fontSize: "13px", color: "var(--color-accent)", fontWeight: 500,
-              }}>
-                profile.jpg
-              </span>
-            </div>
-          )}
+        {/* Illustration column */}
+        <div style={{ ...reveal(0), position: "relative", width: "100%", aspectRatio: "4/5" }}>
+          <Image
+            src="/images/Aboutme.illustration.png.png"
+            alt="About Manali Srivastava"
+            fill
+            style={{ objectFit: "contain", objectPosition: "center center" }}
+          />
         </div>
 
         {/* Text column */}
         <div>
           <h2 style={{
             fontFamily: "var(--font-instrument-serif, 'Instrument Serif', Georgia, serif)",
-            fontSize: "36px", fontWeight: 400, color: "var(--color-text)",
-            marginBottom: "28px", lineHeight: 1.2,
+            fontSize: "64px", fontWeight: 400, color: "var(--color-text)",
+            marginBottom: "28px", lineHeight: 1.05, letterSpacing: "-0.01em",
             ...reveal(0.1),
           }}>
-            About
+            About Me
           </h2>
           {paragraphs.map((p, i) => renderParagraph(p, i, reveal(0.2 + i * 0.1)))}
         </div>

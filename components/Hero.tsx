@@ -15,9 +15,8 @@ export default function Hero() {
           animation: fadeUp 0.65s cubic-bezier(0.22,1,0.36,1) forwards;
         }
         .hero-line:nth-child(1) { animation-delay: 0.05s; }
-        .hero-line:nth-child(2) { animation-delay: 0.16s; }
-        .hero-line:nth-child(3) { animation-delay: 0.27s; }
-        .hero-line:nth-child(4) { animation-delay: 0.38s; }
+        .hero-line:nth-child(2) { animation-delay: 0.18s; }
+        .hero-line:nth-child(3) { animation-delay: 0.30s; }
 
         @keyframes photoReveal {
           from { opacity: 0; transform: translateY(16px); }
@@ -29,54 +28,52 @@ export default function Hero() {
           animation-delay: 0.15s;
         }
 
-        @keyframes floatA {
-          0%, 100% { transform: translate(0px, 0px); }
-          40%       { transform: translate(-14px, -22px); }
-          70%       { transform: translate(10px, -10px); }
+        @keyframes floatCard {
+          0%, 100% { transform: translateY(0px); }
+          50%       { transform: translateY(-7px); }
         }
-        @keyframes floatB {
-          0%, 100% { transform: translate(0px, 0px); }
-          35%       { transform: translate(16px, -16px); }
-          65%       { transform: translate(-10px, 12px); }
+        .hero-card {
+          animation: floatCard 4s ease-in-out infinite;
+          background: var(--color-surface);
+          border: 1px solid var(--color-border);
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
-        .circle-big   { animation: floatA 10s ease-in-out infinite; }
-        .circle-small { animation: floatB 13s ease-in-out infinite; animation-delay: 2s; }
 
-        @media (max-width: 768px) {
+        .hero-products-wrap {
+          position: relative;
+          display: inline-block;
+        }
+        .hero-products-underline {
+          position: absolute;
+          left: -18px;
+          top: -8px;
+          width: calc(100% + 30px);
+          height: calc(100% + 20px);
+          pointer-events: none;
+          overflow: visible;
+        }
+
+        @media (max-width: 900px) {
           .hero-inner {
             flex-direction: column !important;
-            gap: 48px !important;
+            gap: 56px !important;
             padding: 40px 24px 60px !important;
           }
           .hero-photo-col {
-            width: 260px !important;
-            height: 320px !important;
-            margin: 0 auto;
+            width: 100% !important;
+            height: 380px !important;
           }
-          .hero-name { font-size: 48px !important; }
+          .hero-name { font-size: 44px !important; line-height: 1.12 !important; }
         }
       `}</style>
 
-      <section
-        id="hero"
-        style={{
-          minHeight: "100vh",
-          display: "flex",
-          alignItems: "center",
-          paddingTop: "64px",
-        }}
-      >
+      <section id="hero" style={{ minHeight: "100vh", display: "flex", alignItems: "center", paddingTop: "64px" }}>
         <div
           className="hero-inner"
           style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-            padding: "40px 32px 80px",
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "80px",
+            maxWidth: "1100px", margin: "0 auto", padding: "40px 32px 80px",
+            width: "100%", display: "flex", alignItems: "center",
+            justifyContent: "space-between", gap: "48px",
           }}
         >
 
@@ -85,63 +82,52 @@ export default function Hero() {
 
             <h1 className="hero-line hero-name" style={{
               fontFamily: "var(--font-instrument-serif, 'Instrument Serif', Georgia, serif)",
-              fontSize: "72px",
-              fontWeight: 400,
-              color: "var(--color-text)",
-              lineHeight: 1.08,
-              letterSpacing: "-0.01em",
-              marginBottom: "24px",
+              fontSize: "72px", fontWeight: 400, color: "var(--color-text)",
+              lineHeight: 1.05, letterSpacing: "-0.01em", marginBottom: "20px",
             }}>
-              Hi, I&apos;m Manali.
+              Hi, I&apos;m{" "}
+              <span style={{ color: "var(--color-accent)" }}>Manali</span>
             </h1>
 
-            <div className="hero-line" style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "24px" }}>
-              {["PSPO I", "Product Manager", "UK"].map((badge) => (
-                <span key={badge} style={{
-                  fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
-                  fontSize: "11px",
-                  fontWeight: 600,
-                  color: "var(--color-accent)",
-                  background: "var(--color-accent-soft)",
-                  border: "1px solid rgba(196,98,45,0.25)",
-                  borderRadius: "5px",
-                  padding: "4px 11px",
-                  letterSpacing: "0.07em",
-                  textTransform: "uppercase",
-                }}>
-                  {badge}
-                </span>
-              ))}
-            </div>
-
             <p className="hero-line" style={{
-              fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
-              fontSize: "16px",
-              color: "var(--color-muted)",
-              lineHeight: 1.75,
-              marginBottom: "24px",
-              maxWidth: "480px",
+              fontFamily: "var(--font-instrument-serif, 'Instrument Serif', Georgia, serif)",
+              fontSize: "58px", fontWeight: 400, color: "var(--color-text)",
+              lineHeight: 1.1, marginBottom: "40px",
             }}>
-              I build user-focused digital products by combining product strategy, customer insight, and structured problem-solving. With experience across fintech, AI-enabled platforms, operations, and regulated workflows. Turning complex business challenges into simple, scalable product decisions that drive adoption, efficiency, and revenue.
+              I turn messy problems into{" "}
+              <span
+                className="hero-products-wrap"
+                style={{ fontStyle: "italic" }}
+              >
+                products
+                <svg
+                  className="hero-products-underline"
+                  viewBox="0 0 240 100"
+                  preserveAspectRatio="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M 16,43 C 10,16 65,3 118,8 C 168,3 226,16 230,52 C 234,78 210,92 118,92 C 65,94 8,80 16,49"
+                    stroke="#E84714"
+                    strokeWidth="4.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>{" "}users actually trust.
             </p>
 
             <div className="hero-line" style={{ display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
-              {/* Row 1: both buttons side by side */}
               <div style={{ display: "flex", gap: "12px" }}>
                 <a
                   href="#work"
                   style={{
-                    background: "var(--color-accent)",
-                    color: "#fff",
-                    padding: "10px 22px",
-                    borderRadius: "6px",
-                    fontSize: "13px",
-                    fontWeight: 500,
-                    textDecoration: "none",
+                    background: "var(--color-accent)", color: "#fff",
+                    padding: "13px 32px", borderRadius: "100px",
+                    fontSize: "14px", fontWeight: 500, textDecoration: "none",
                     fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "6px",
+                    display: "inline-flex", alignItems: "center", gap: "8px",
                     transition: "opacity 0.15s",
                   }}
                   onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
@@ -152,21 +138,14 @@ export default function Hero() {
                     <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </a>
-
                 <a
                   href="#contact"
                   style={{
-                    color: "var(--color-accent)",
-                    padding: "10px 22px",
-                    borderRadius: "6px",
-                    fontSize: "13px",
-                    fontWeight: 500,
-                    textDecoration: "none",
+                    color: "var(--color-accent)", padding: "13px 32px", borderRadius: "100px",
+                    fontSize: "14px", fontWeight: 500, textDecoration: "none",
                     fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
-                    border: "1.5px solid var(--color-accent)",
-                    display: "inline-block",
-                    background: "transparent",
-                    transition: "background 0.15s",
+                    border: "1.5px solid var(--color-accent)", display: "inline-block",
+                    background: "transparent", transition: "background 0.15s",
                   }}
                   onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-accent-soft)")}
                   onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
@@ -174,15 +153,10 @@ export default function Hero() {
                   Get in touch
                 </a>
               </div>
-
-              {/* Row 2: availability below */}
               <span style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
+                display: "inline-flex", alignItems: "center", gap: "6px",
                 fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
-                fontSize: "12px",
-                color: "var(--color-muted)",
+                fontSize: "12px", color: "var(--color-muted)",
               }}>
                 <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#22c55e", display: "inline-block", flexShrink: 0 }} />
                 Open to roles in the UK
@@ -190,66 +164,20 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ── Right: photo + static circles ── */}
+          {/* ── Right: photo + floating cards ── */}
           <div
             className="hero-photo-col"
-            style={{
-              flex: "0 0 auto",
-              width: "340px",
-              height: "420px",
-              position: "relative",
-              flexShrink: 0,
-            }}
+            style={{ flex: "0 0 auto", width: "500px", height: "520px", position: "relative", flexShrink: 0 }}
           >
-            {/* Large circle — top-right */}
-            <div className="circle-big" style={{
-              position: "absolute",
-              width: "300px",
-              height: "300px",
-              top: "-32px",
-              right: "-32px",
-              borderRadius: "50%",
-              background: "#C4622D",
-              opacity: 0.18,
-              zIndex: 0,
-            }} />
+            {/* Illustration — already contains the floating cards baked in */}
+            <Image
+              src="/images/hero.illustration.png.png"
+              alt="Manali Srivastava — product manager illustration"
+              fill
+              style={{ objectFit: "contain", objectPosition: "center center" }}
+              priority
+            />
 
-            {/* Small circle — bottom-left */}
-            <div className="circle-small" style={{
-              position: "absolute",
-              width: "180px",
-              height: "180px",
-              bottom: "-16px",
-              left: "-16px",
-              borderRadius: "50%",
-              background: "#A8481E",
-              opacity: 0.12,
-              zIndex: 0,
-            }} />
-
-            {/* Photo */}
-            <div style={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "200px 200px 160px 160px",
-              overflow: "hidden",
-              position: "relative",
-              zIndex: 1,
-              background: "var(--color-accent-soft)",
-              boxShadow: "0 24px 64px rgba(196,98,45,0.15), 0 4px 16px rgba(0,0,0,0.07)",
-            }}>
-              <Image
-                src="/images/profile.jpg"
-                alt="Manali Srivastava"
-                fill
-                style={{
-                  objectFit: "contain",
-                  objectPosition: "center center",
-                  mixBlendMode: "multiply",
-                }}
-                priority
-              />
-            </div>
           </div>
 
         </div>

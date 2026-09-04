@@ -30,7 +30,7 @@ export default function Nav() {
           left: 0,
           right: 0,
           zIndex: 50,
-          background: "rgba(250, 250, 247, 0.92)",
+          background: "rgba(255, 255, 255, 0.92)",
           backdropFilter: "blur(12px)",
           WebkitBackdropFilter: "blur(12px)",
           borderBottom: "1px solid var(--color-border)",
@@ -63,8 +63,8 @@ export default function Nav() {
 
               <div style={{ display: "flex", gap: "4px", alignItems: "center" }}>
                 {[
-                  ["Work", "/#work"],
                   ["About", "/#about"],
+                  ["Work", "/#work"],
                   ["Contact", "/#contact"],
                 ].map(([label, href]) => (
                   <a key={label} href={href} className="nav-link">

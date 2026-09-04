@@ -1,12 +1,12 @@
 :root {
   /* Colors */
-  --color-bg: #FAFAF7;
+  --color-bg: #FFFFFF;
   --color-surface: #FFFFFF;
   --color-text: #1A1A1A;
   --color-text-muted: #5C5C5C;
-  --color-border: #E5E5E0;
-  --color-accent: #C4622D;
-  --color-accent-soft: #F5E9E2;
+  --color-border: rgba(26, 26, 26, 0.12);
+  --color-accent: #E84714;
+  --color-accent-soft: rgba(232, 71, 20, 0.08);
 
   /* Typography */
   --font-serif: 'Instrument Serif', 'Fraunces', Georgia, serif;

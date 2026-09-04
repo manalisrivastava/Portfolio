@@ -5,7 +5,7 @@ import AboutContent from "./AboutContent";
 
 function parseAboutMd(content: string): { paragraphs: string[] } {
   const lines = content
-    .replace(/^## About\s*/m, "")
+    .replace(/^## About me\s*/m, "")
     .trim()
     .split("\n");
 
@@ -32,9 +32,5 @@ export default function About() {
   const raw = fs.readFileSync(filePath, "utf-8");
   const { paragraphs } = parseAboutMd(raw);
 
-  const profileExists = fs.existsSync(
-    path.join(process.cwd(), "public", "images", "profile.jpg")
-  );
-
-  return <AboutContent paragraphs={paragraphs} profileExists={profileExists} />;
+  return <AboutContent paragraphs={paragraphs} />;
 }

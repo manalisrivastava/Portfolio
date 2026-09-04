@@ -33,13 +33,13 @@ export default function Skills() {
       <div style={{
         position: "absolute", width: "220px", height: "220px",
         bottom: "-40px", right: "-50px", borderRadius: "50%",
-        background: "#C4622D", opacity: 0.09, zIndex: 0,
+        background: "#E84714", opacity: 0.09, zIndex: 0,
         animation: "floatA 7s ease-in-out infinite",
       }} />
       <div style={{
         position: "absolute", width: "130px", height: "130px",
         top: "20px", left: "-40px", borderRadius: "50%",
-        background: "#A8481E", opacity: 0.07, zIndex: 0,
+        background: "#E84714", opacity: 0.07, zIndex: 0,
         animation: "floatB 9s ease-in-out infinite",
         animationDelay: "2s",
       }} />

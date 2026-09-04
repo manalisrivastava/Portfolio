@@ -299,7 +299,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           top: "80px",
           left: "-100px",
           borderRadius: "50%",
-          background: "#C4622D",
+          background: "#E84714",
           opacity: 0.12,
           animation: "floatA 7s ease-in-out infinite",
         }} />
@@ -310,7 +310,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           bottom: "120px",
           right: "-50px",
           borderRadius: "50%",
-          background: "#A8481E",
+          background: "#E84714",
           opacity: 0.10,
           animation: "floatB 9s ease-in-out infinite",
           animationDelay: "1s",

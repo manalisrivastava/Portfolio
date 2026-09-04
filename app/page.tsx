@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <CaseStudyGrid />
       <About />
+      <CaseStudyGrid />
       <Skills />
       <Contact />
     </main>
