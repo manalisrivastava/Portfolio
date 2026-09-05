@@ -13,7 +13,7 @@ export default function Nav() {
           color: var(--color-muted);
           text-decoration: none;
           padding: 6px 14px;
-          border-radius: 6px;
+          border-radius: 999px;
           transition: background 0.15s, color 0.15s;
           display: inline-block;
         }

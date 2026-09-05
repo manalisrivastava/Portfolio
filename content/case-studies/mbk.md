@@ -1,80 +1,97 @@
 ---
-title: "MBK Early Years: Scaling Operations & Client Experience in a Regulated Service Business"
+title: "MBK: Internal Tool Development and Pipeline Design"
 role: "Product Manager (Client Accounts)"
-duration: "Jan 2026 - Present"
-scale: "14,000+ Clients | £250K+ Regulated Business | Cross-functional Operations & Product Optimisation"
+duration: "Jan 2026 – Present"
+team: "Operations, Consultants, Engineers, Designers, Customer Success"
+heroImage: "/images/MBK-card-new.png.png"
 ---
 
-## 1. Vision & The Problem
+## Executive Summary
 
-As MBK Early Years scaled, operational complexity increased across onboarding, communication, compliance, and client lifecycle management. Processes were fragmented, operational visibility was limited, and manual workflows created inefficiencies for both clients and internal teams.
+MBK Early Years is a £250K+ regulated service business serving 14,000+ clients. As Product Manager (Client Accounts), I owned internal tool development, client pipeline design, and lifecycle retention strategy. By leading direct client discovery, orchestrating a cross-functional pod of operations, consultants, engineers, designers, and customer success executives, and re-engineering fragmented workflows into scalable internal systems, I built structured client onboarding journeys and unlocked £100K+ in retention-driven revenue opportunities.
 
-1. **Operational Fragmentation:** Client onboarding, consent collection, and workflow management lacked standardisation across systems.
-2. **Limited Lifecycle Visibility:** Disconnected CRM processes made it difficult to track client journeys and identify retention opportunities.
-3. **Manual Dependency:** Operational teams relied heavily on manual communication and repetitive admin tasks, slowing scalability.
-4. **Stakeholder Misalignment:** Client pain points and workflow gaps were not consistently captured through structured discovery.
-5. **The Goal:** Build scalable operational systems and product workflows that improved onboarding, retention, communication, and operational efficiency while maintaining regulatory compliance.
+## 1. Context, Scope & Stakeholders
 
-## 2. The Solution: Product-Led Operations Infrastructure
+- **Role:** Product Manager (Client Accounts)
+- **Duration:** January 2026 – Present
+- **Scale:** £250K+ Regulated Business | 14,000+ Clients | 15+ Interconnected CRM Data Dependencies
+- **Team:** Cross-functional team spanning Operations, Consultants, Engineers, Designers, and Customer Success Executives
 
-I worked across Product, Operations, and Leadership to redesign workflows, improve operational visibility, and create scalable systems for client onboarding and lifecycle management.
+## 2. Problem Space & Strategic Framing
 
-### The Operational Core: Workflow & Systems Optimisation
+As the business scaled, operational complexity outgrew legacy tools and manual pipelines. Because MBK operates in a heavily regulated sector, siloed data handling and a disconnect between internal tools and actual client needs created high structural friction.
 
-1. **End-to-End Onboarding Design:** Designed onboarding workflows and operational SOPs for a £250K+ regulated business serving 14,000+ clients.
-2. **CRM Workflow Architecture:** Built CRM systems across 15+ interconnected data dependencies to improve lifecycle tracking and operational visibility.
-3. **Workflow Standardisation:** Created SOPs and structured operational processes to reduce ambiguity and improve execution consistency across teams.
-4. **Consent & Compliance Flows:** Defined GDPR-compliant onboarding and consent workflows, reducing onboarding friction and manual handling by 40%.
+- **Operational Fragmentation:** Client onboarding, data collection, and communication workflows were split across disconnected tools, leading to execution inconsistencies.
+- **Limited Pipeline Visibility:** Disconnected CRM and internal pipelines obscured client journey tracking, making churn prediction and retention optimisation reactive.
+- **Customer-to-Operations Disconnect:** Internal assumptions about client friction points during onboarding did not match reality, as direct client feedback was rarely captured systematically.
+- **Manual Dependency:** Internal teams relied heavily on manual data entry and repetitive administrative tasks, capping organisational scalability.
 
-### The Strategic Extension: Discovery & Retention
+**The Core Product Challenge:** How do you design internal tools and pipeline architectures to drive efficiency and scale throughput while maintaining regulatory standards and improving the client experience?
 
-1. **Stakeholder Discovery:** Conducted 50+ discovery calls and stakeholder interviews to identify operational inefficiencies, communication gaps, and client pain points.
-2. **Roadmap Prioritisation:** Used RICE scoring frameworks to prioritise operational and product initiatives, deferring 30% of low-impact requests.
-3. **Communication & Retention Strategy:** Partnered with leadership to optimise client communication journeys and identify £100K+ revenue opportunities through retention and lifecycle improvements.
+**Strategic Hypothesis:** If we ground our internal tool development and pipeline design in direct client discovery and structured operational processes, we can remove manual overhead, protect regulatory compliance, and unlock compounding retention value.
 
-## 3. Product Operations, Retention & Compliance
+## 3. Product Architecture: Internal Tools & Pipeline Design
 
-A major focus of my role was ensuring operational systems could scale efficiently without compromising client experience or compliance standards.
+To solve the structural bottlenecks, I led a comprehensive transformation of MBK's internal tools and operational pipeline architecture, bridging direct client insights with CRM execution.
 
-1. **Lifecycle Visibility Improvements:** CRM workflow optimisation improved visibility into client journeys by 15%.
-2. **Operational Efficiency:** Standardised onboarding systems and SOPs significantly reduced manual operational dependency.
-3. **Compliance-by-Design:** GDPR-compliant consent and onboarding workflows improved trust while reducing operational friction by 40%.
-4. **Strategic Prioritisation:** RICE-based prioritisation frameworks helped leadership focus on high-impact operational improvements.
-5. **Retention & Revenue Growth:** Communication and lifecycle strategy optimisation identified £100K+ revenue opportunities.
+### The Operational Core: Internal Tool Development & Pipeline Optimisation
 
-## 4. Key Product Decisions
+- **End-to-End Onboarding Pipeline Design:** Designed and developed the internal onboarding pipeline architecture for a £250K+ business serving 14,000+ clients, shifting from manual steps to standardised, repeatable workflows based on direct user feedback.
+- **CRM & Tool Architecture:** Mapped and rebuilt CRM systems and internal tools across 15+ interconnected data dependencies, bridging data silos to provide end-to-end visibility into the client lifecycle.
+- **Process Infrastructure:** Developed rigorous Standard Operating Procedures (SOPs) alongside internal tool rollouts, drastically reducing ambiguity and human error during team scaling.
 
-The following strategic and operational decisions shaped the scalability and effectiveness of MBK's systems:
+### The Strategic Extension: Client Discovery & Retention
 
-1. **Decision 1 — Discovery before System Design:** Before redesigning workflows, I conducted discovery calls and stakeholder interviews to understand operational bottlenecks and client pain points directly from users and internal teams.
-2. **Decision 2 — SOPs as Operational Infrastructure:** Rather than relying on informal operational knowledge, I created structured SOPs to improve scalability, consistency, and onboarding efficiency for future team growth.
-3. **Decision 3 — CRM Visibility before Automation:** We prioritised improving lifecycle visibility and workflow clarity before introducing deeper automation, ensuring the underlying systems were operationally reliable first.
-4. **Decision 4 — Compliance Embedded into User Journeys:** GDPR and consent requirements were integrated directly into onboarding workflows instead of being treated as separate legal processes, reducing friction for clients and operations teams.
-5. **Decision 5 — Prioritisation through RICE Scoring:** Not every operational request created meaningful business value. Using RICE scoring allowed us to defer 30% of low-impact initiatives and focus resources strategically.
-6. **Decision 6 — Communication as a Retention Lever:** Client communication was treated as part of the product experience rather than purely operational messaging, improving engagement and identifying retention opportunities.
-7. **Decision 7 — Systems Designed for Scale:** Operational workflows were designed not just for immediate efficiency, but to support future business growth without increasing manual complexity proportionally.
+- **Direct Client & Stakeholder Discovery:** Led intensive discovery sessions, conducting direct calls with clients to understand their pain points during onboarding and service delivery, alongside internal interviews with consultants and customer success executives to unearth hidden workflow friction points.
+- **Lifecycle Retention Framework:** Partnered with leadership to overhaul client communication pipelines based on direct feedback, identifying and unlocking £100K+ in revenue opportunities via proactive lifecycle management.
 
-## 5. Reflections & Stack
+## 4. Key Product Decisions & Strategic Trade-offs
 
-### What I Learned
+### Decision 1: Direct Client Discovery Before Tool Development
 
-1. **Operations is Product:** Internal workflows directly shape client experience, retention, and scalability.
-2. **Discovery Creates Better Systems:** Stakeholder interviews consistently revealed operational issues that were invisible in dashboards alone.
-3. **Compliance Should Reduce Friction, not Increase It:** Well-designed consent and onboarding systems can improve trust while simplifying operations.
-4. **Prioritisation Matters More than Volume:** Deferring low-impact requests created more value than trying to execute everything simultaneously.
-5. **Communication Drives Retention:** Structured communication strategies can unlock both operational efficiency and revenue growth.
+**Trade-off:** Pausing technical execution to conduct qualitative discovery calls directly with clients and internal stakeholders before writing code or modifying internal tools.
 
-### What I'd Do Differently
+**Rationale:** Relying solely on internal operational assumptions creates solutions for the business, not the user. Direct client conversations exposed critical onboarding friction points that were entirely invisible in high-level operational dashboards.
 
-1. **Earlier Analytics Instrumentation:** More granular workflow analytics earlier would have improved operational decision-making speed.
-2. **Deeper Automation Layers:** Some repetitive operational processes could be automated further to reduce manual intervention.
-3. **Structured Feedback Loops:** Building continuous client feedback mechanisms into workflows earlier would strengthen retention insights.
+### Decision 2: SOPs as Foundational Infrastructure
 
-### Stack & Methods
+**Trade-off:** Investing product and operational resources into writing structured, rigorous SOPs instead of immediately pushing for raw software automation.
 
-1. **Research:** Discovery Calls, Stakeholder Interviews, Workflow Gap Analysis.
-2. **Strategy:** Operational Scaling, RICE Prioritisation, Retention & Lifecycle Optimisation.
-3. **Operations:** SOP Design, CRM Workflow Architecture, Cross-functional Process Management.
-4. **Compliance:** GDPR Consent Management, Regulated Onboarding Workflow Design.
-5. **Product & Systems:** Workflow Mapping, Lifecycle Visibility Optimisation, Operational Automation Planning.
-6. **Leadership:** Cross-functional collaboration with Operations, Leadership, and Client Success teams.
+**Rationale:** In a regulated service business, code cannot automate a broken human process. Documenting and standardising the operational mental model across teams was a necessary prerequisite for sustainable tool scaling.
+
+### Decision 3: Pipeline Visibility Before Deep Automation
+
+**Trade-off:** Prioritising data mapping and pipeline visibility across 15+ dependencies over building complex, automated action triggers.
+
+**Rationale:** You cannot automate what you cannot see. Establishing a single source of truth within the CRM and internal tools was essential to prevent downstream data corruption.
+
+### Decision 4: Aggressive Prioritisation via RICE Scoring
+
+**Trade-off:** Deferring 30% of low-impact operational requests and feature asks from internal stakeholders.
+
+**Rationale:** Resource scarcity requires ruthlessness. Implementing a scoring framework protected the product roadmap from scope creep and forced focus on high-leverage initiatives.
+
+## 5. Measurable Impact & Business Outcomes
+
+| Metric | Impact Achieved | Strategic Significance |
+|---|---|---|
+| Operational Efficiency | 40% reduction in manual handling and operational friction | Standardised internal tooling and pipeline workflows eliminated execution inconsistencies |
+| Pipeline Visibility | 15% improvement in end-to-end client journey tracking | Rebuilt CRM architecture across 15+ data dependencies created a single source of truth |
+| Revenue & Retention | £100K+ in revenue opportunities identified and captured | Lifecycle communication strategy informed directly by client discovery calls |
+| Strategic Focus | 30% of low-impact requests successfully deferred | RICE scoring protected team velocity and concentrated effort on high-leverage systems |
+
+## 6. Retrospective & Learnings
+
+**What Worked Well:** Combining direct client discovery with cross-functional execution. Aligning operations, consultants, engineers, designers, and customer success around actual client insights ensured our internal tools improved the end-user experience rather than just speeding up internal data entry.
+
+**What I Would Do Differently:**
+
+- **Earlier Analytics Instrumentation:** Implementing granular workflow analytics from Day 1 would have accelerated decision-making speed during the initial internal tool re-architecture.
+- **Systematised Feedback Loops:** Establishing formal, continuous feedback loops with client-facing teams earlier would have surfaced retention insights even faster.
+
+## 7. Stack & Methodology
+
+- **Discovery & Research:** Direct Client Discovery Calls, Stakeholder Interviews, Workflow Gap Analysis.
+- **Strategy & Prioritisation:** Operational Scaling, RICE Scoring, Retention & Lifecycle Optimisation.
+- **Operations & Systems:** SOP Design, Internal Tool Architecture, CRM Pipeline Design (15+ Data Dependencies), Cross-Functional Process Management.
+- **Compliance & Governance:** Regulatory Consent Frameworks, Regulated Onboarding Design.

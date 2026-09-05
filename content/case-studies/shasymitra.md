@@ -16,7 +16,7 @@ Smallholder farmers in India operate in an environment defined by deep informati
 - **Role:** Founder & Product Lead (End-to-end product strategy, core architecture, GTM)
 - **Duration:** March 2022 – June 2024 (26 Months)
 - **Scale:** 21,000+ Farmers | 5+ Indian States | £870K+ ARR
-- **Team:** Cross-functional pod of 15+ (Engineers, ML Engineers, Agronomists, Supply Chain Operations, Retail Staff)
+- **Team:** Cross-functional team of 15+ (Engineers, ML Engineers, Agronomists, Supply Chain Operations, Retail Staff)
 
 ## 2. The Problem Space: Market Failure & Low Trust
 

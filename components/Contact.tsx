@@ -122,7 +122,7 @@ function ContactRow({
   value: string;
 }) {
   return (
-    <div style={{ display: "flex", alignItems: "baseline", gap: "20px" }}>
+    <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
       <span
         style={{
           fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
@@ -133,6 +133,9 @@ function ContactRow({
           color: "rgba(255,255,255,0.35)",
           width: "72px",
           flexShrink: 0,
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "6px",
         }}
       >
         {label}
@@ -145,7 +148,7 @@ function ContactRow({
           style={{
             fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
             fontSize: "16px",
-            color: "var(--color-accent-soft)",
+            color: "#ffffff",
             textDecoration: "none",
             transition: "opacity 0.15s",
           }}
