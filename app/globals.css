@@ -60,6 +60,20 @@ p, span, a, li, label {
   animation: float-card 10s ease-in-out infinite alternate;
 }
 
+.case-study-title { color: var(--color-text); }
+.case-study-date { color: var(--color-muted); }
+.case-study-description { color: var(--color-muted); }
+.case-study-metric { color: var(--color-accent); }
+.case-study-tag {
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.case-study-link {
+  color: var(--color-accent);
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
 .case-study-card:hover {
   background: var(--color-accent);
   transform: translateY(-8px);
@@ -70,7 +84,6 @@ p, span, a, li, label {
 .case-study-card:hover h3,
 .case-study-card:hover p,
 .case-study-card:hover .case-study-link,
-.case-study-card:hover .case-study-metric,
 .case-study-card:hover .case-study-tag {
   color: #ffffff;
 }
@@ -81,14 +94,6 @@ p, span, a, li, label {
 
 .case-study-card:hover .case-study-link {
   opacity: 0.95;
-}
-
-.case-study-link {
-  transition: color 0.25s ease, opacity 0.25s ease;
-}
-
-.case-study-tag {
-  transition: background 0.25s ease, color 0.25s ease;
 }
 
 @keyframes float-card {

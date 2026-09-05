@@ -1,70 +1,93 @@
 ---
-title: "ShasyMitra: Bridging the Trust Gap in Agtech"
+title: "ShasyMitra: Scaling an Agtech Startup from 0 to £870K ARR"
 role: "Founder & Product Lead"
-duration: "Mar 2022 - Jun 2024"
+duration: "Mar 2022 – Jun 2024"
 scale: "21,000+ Farmers | 5+ Indian States | £870K+ ARR"
+team: "15+ (Engineers, ML Engineers, Agronomists, Supply Chain, Retail Staff)"
+heroImage: "/images/shasymitra-card.png.png"
 ---
 
-## 1. Vision & The Problem
+## Executive Summary
 
-The Indian agricultural landscape was defined by fragmented services and a deep lack of trust. Farmers relied on inconsistent offline touchpoints for guidance, inputs, and soil health checks.
+Smallholder farmers in India operate in an environment defined by deep information asymmetry, market exploitation, and virtually zero baseline trust in digital tools. As Founder & Product Lead, I architected and scaled ShasyMitra, a hybrid "phygital" platform designed to bridge this trust gap. Over 26 months, we scaled the ecosystem to 21,000+ active farmers across 5 states, achieving £870K+ in ARR by sequencing everyday advisory before marketplace transactions and anchoring digital software with physical retail hubs ("ShasyMitra Junctions").
 
-1. **Information Asymmetry:** Unreliable data led to critical mistakes in crop care.
-2. **Market Exploitation:** A lack of price transparency allowed black-market vendors to exploit farmers during crucial crop cycles.
-3. **The Goal:** Create a single, trusted platform providing diagnostics, guidance, and fair marketplace access to predictably increase net income.
+## 1. Context & Scope
 
-## 2. The Solution: A "Phygital" Ecosystem
+- **Role:** Founder & Product Lead (End-to-end product strategy, core architecture, GTM)
+- **Duration:** March 2022 – June 2024 (26 Months)
+- **Scale:** 21,000+ Farmers | 5+ Indian States | £870K+ ARR
+- **Team:** Cross-functional pod of 15+ (Engineers, ML Engineers, Agronomists, Supply Chain Operations, Retail Staff)
 
-I led a cross-functional team of 15+ members to build a hybrid model that addressed both digital accessibility and physical trust requirements.
+## 2. The Problem Space: Market Failure & Low Trust
+
+Agricultural services in rural India were heavily fragmented. Farmers relied on unverified offline touchpoints for guidance, inputs, and soil checks, leading to two critical failure modes:
+
+| Problem Dimension | Root Cause | Impact on User |
+|---|---|---|
+| Information Asymmetry | Generic, unverified crop advice from local vendors | Critical errors in fertilizer/pesticide application, destroying seasonal yields |
+| Market Exploitation | Price opacity and predatory middlemen during harvest | Smallholder profit margins eroded by black-market vendors |
+| Adoption Friction | Low digital literacy and zero trust in mobile apps | Immediate abandonment of pure-play software solutions |
+
+**Core Strategic Hypothesis:** If we sequence our value proposition by providing unmonetized, high-accuracy advisory before introducing marketplace transactions, we can lower customer acquisition friction, build compounding trust, and achieve sustainable long-term retention.
+
+## 3. Product Architecture
+
+To solve the dual constraints of digital accessibility and physical reassurance, I designed a hybrid product architecture combining a digital core with a physical extension, unified by a compounding trust and revenue flywheel.
 
 ### The Digital Core: ShasyMitra App
 
-1. **AI-Enabled Advisory:** Personalized step-by-step guides for crop management.
-2. **Real-time Diagnostics:** AI disease detection and consultation.
-3. **Hyper-local Utility:** Weather alerts and local-language support.
+- **AI-Enabled Advisory Engine:** Personalised, step-by-step crop management calendars tailored to local soil profiles and micro-weather patterns.
+- **Robust Offline Capability:** Designed with local-first data caching to handle intermittent rural connectivity without data loss.
 
-### The Physical Extension: ShasyMitra Junction
+### The Physical Extension: ShasyMitra Junctions
 
-1. **One-Stop Hubs:** Retail outlets providing essential inputs like seeds and fertilizers at fair prices.
-2. **Face-to-Face Trust:** Expert advisory services integrated directly into the retail experience.
+- **One-Stop Hubs:** Physical retail outlets deployed in high-density farming districts, starting in Firozabad and Agra and expanding across Western Uttar Pradesh, offering verified seeds and nutrients at transparent prices.
+- **Soil Testing Camps:** Deployed as a core product acquisition loop, testing soil health in person to feed structured, ground-truth data back into our digital advisory engine.
 
-## 3. Fintech & Payment Transparency
+## 4. Key Product Decisions & Strategic Trade-offs
 
-A core pillar of my strategy was solving the "payment anxiety" farmers felt when dealing with buyers.
+### Decision 1: Sequencing Roadmap by Trust Accumulation
 
-1. **Payment Confirmation Workflows:** I introduced standardized digital confirmation for crop sales, which reduced support queries by 25%.
-2. **Transaction Visibility:** By improving onboarding and visibility for supplier partnerships, we drove a 20% improvement in transaction efficiency, contributing to £870K+ ARR.
-3. **Compliance & Security:** Translated DPDP compliance and identity verification into seamless onboarding journeys, reducing release rework by 20%.
+- **The Trade-off:** Deliberately delaying monetization (marketplace transactions) by six months.
+- **The Rationale:** In high-stakes markets, asking for a transaction before proving value results in immediate churn. We optimised for daily active utility (weather, disease alerts, advisory) first, earning the right to facilitate commerce later.
 
-## 4. Key Product Decisions
+### Decision 2: Data-Driven Expansion of Physical Junctions
 
-The following strategic choices defined the product's market-fit and defensibility:
+- **The Trade-off:** Resisting pressure to scale physical retail footprint prematurely across multiple states.
+- **The Rationale:** We used digital app telemetry (clustering of user queries and high-intent requests) to identify geographic demand pockets before investing capital into physical retail infrastructure.
 
-1. **Decision 1 — Advisory before Selling:** I sequenced the roadmap as: Clarity of everyday decisions → Diagnostics → Transactions. We earned trust through weekly guidance before asking farmers to trust us with their harvest.
-2. **Decision 2 — Human-in-the-Loop for Disease Detection:** To prevent a wrong diagnosis from ruining a season, low-confidence AI results were routed to agronomists for verification. This protected the farmer while generating clean data for model retraining.
-3. **Decision 3 — MVP with 2–7 Diseases, not 50:** We focused on the most prevalent regional diseases to ensure 100% reliability. In low-trust markets, reliability beats coverage every time.
-4. **Decision 4 — Junctions followed App Traction:** We only opened physical stores once farmers began asking where to buy recommended inputs. We launched in Firozabad, then Agra, and eventually expanded to five locations across western Uttar Pradesh.
-5. **Decision 5 — Price Transparency before Selling Features:** We published price information to prove fairness before automating selling flows. Manual matchmaking in the early stages helped us learn failure modes before scaling.
-6. **Decision 6 — Offline Mode in V1:** Recognizing spotty rural connectivity, offline functionality was a Day 1 requirement, not a later optimization.
-7. **Decision 7 — Soil Camps as Product, not Marketing:** Soil health testing camps provided the official data needed to fuel our personalized advisory engine.
+### Decision 3: Price Transparency before Selling Features
 
-## 5. Reflections & Stack
+- **The Trade-off:** Publishing raw market price data manually before automating selling flows.
+- **The Rationale:** Proving price fairness manually allowed us to study failure modes and build credibility before introducing digital matchmaking engines.
 
-### What I Learned
+## 5. Fintech, Security & Operational Execution
 
-1. **Trust is a product feature:** Sequencing the roadmap around trust accumulation was the most important call I made.
-2. **Hybrid models are defensible:** Digital competitors can copy an app, but they cannot easily replicate the in-person trust of Junctions and soil camps.
-3. **Depth over Speed:** Shipping fewer, highly reliable features is critical in underserved markets where one bad experience is permanent.
+- **Payment Transparency Workflows:** Introduced standardised digital confirmation workflows for crop sales and input purchases, reducing buyer-seller disputes and cutting customer support ticket volume by 25%.
+- **Transaction Efficiency:** Streamlined onboarding workflows and supplier integrations, driving a 20% improvement in transaction velocity that directly supported our £870K+ ARR milestone.
+- **Compliance & Security:** Translated complex Digital Personal Data Protection (DPDP) compliance requirements and identity verification standards into seamless mobile onboarding flows, reducing compliance-driven release rework by 20%.
 
-### What I'd Do Differently
+## 6. Measurable Impact & Business Outcomes
 
-1. **Supplier Diversification:** I would onboard 2–3 suppliers per category earlier to mitigate concentration risk.
-2. **Faster Market Access:** Manual matching for selling flows could have started an entire quarter earlier.
-3. **Instrumentation:** I should have shipped analytics with the very first build rather than reconstructing early data from operations.
+| Metric | Impact Achieved | Strategic Significance |
+|---|---|---|
+| Scale & Growth | 21,000+ Active Farmers Across 5 States | Validated 0-to-1 product-market fit in a historically hard-to-reach demographic |
+| Revenue | £870K+ ARR | Proved economic viability and strong unit economics of the hybrid model |
+| Operational Efficiency | 25% Reduction in Support Queries | Standardised digital payment and transaction confirmations minimised disputes |
+| Engineering Velocity | 20% Reduction in Release Rework | Baked compliance and identity verification seamlessly into early product architecture |
 
-### Stack & Methods
+## 7. Retrospective & Learnings
 
-1. **Research:** User Research, 200+ Interviews, Field Testing.
-2. **Strategy:** 0 to 1 Roadmapping, MVP Scoping, Trust-Based Adoption Modelling.
-3. **Design:** Human-in-the-Loop ML, Local-Language UX, Wireframing.
-4. **Leadership:** Cross-functional management (agronomists, engineers, retail ops, supply chain).
+**What Worked Well:** Treating trust as a first-class product feature rather than a marketing afterthought. Sequencing the roadmap around everyday utility created compounding organic growth.
+
+**What I Would Do Differently:**
+
+- **Supplier Diversification:** Onboarded 2–3 suppliers per category earlier in the lifecycle to mitigate inventory concentration risk.
+- **Early Instrumentation:** Implemented robust product analytics telemetry on Day 1 rather than retrofitting tracking during growth phases, which initially obscured early funnel drop-off points.
+
+## 8. Stack & Methodology
+
+- **Discovery & Research:** 200+ User Interviews, Ethnographic Field Studies, Participatory Design.
+- **Strategy & Core PM:** 0-to-1 Roadmapping, Unit Economics Modelling, Trust-Based Adoption Frameworks.
+- **Design:** Vernacular UX/UI, Wireframing for Low-Literacy Users, Hybrid Service Blueprinting.
+- **Cross-Functional Leadership:** Managing multidisciplinary squads across software engineering, agronomy, supply chain, and retail operations.

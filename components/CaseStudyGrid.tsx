@@ -15,11 +15,12 @@ const caseStudies: CaseStudyCardType[] = [
   },
   {
     slug: "shasymitra",
-    title: "ShasyMitra",
-    oneLiner: "Founded an AI-enabled advisory and payments platform serving 21,000+ farmers across 5 Indian states.",
-    tags: ["0-to-1", "AI product", "Payments", "Marketplace"],
-    metric: "£870K+ ARR",
+    title: "ShasyMitra: Scaling an Agtech Startup from 0 to £870K ARR",
+    oneLiner: "Architected a hybrid \"phygital\" agtech ecosystem combining vernacular advisory apps with physical retail hubs to serve 21,000+ farmers across 5 states.",
+    tags: ["0-to-1", "Marketplace", "Ecosystem Strategy", "Phygital"],
+    thumbnail: "/images/shasymitra-card.png.png",
     date: "Mar 2022 - Jun 2024",
+    bold: true,
   },
   {
     slug: "payswift",
@@ -88,17 +89,18 @@ export default function CaseStudyGrid() {
           className={isVisible ? "animate-in-scroll" : ""}
           style={{
             fontFamily: "var(--font-instrument-serif, 'Instrument Serif', Georgia, serif)",
-            fontSize: "36px",
+            fontSize: "64px",
             fontWeight: 400,
             color: "var(--color-text)",
-            marginBottom: "48px",
-            lineHeight: 1.2,
+            marginBottom: "56px",
+            lineHeight: 1.05,
+            letterSpacing: "-0.01em",
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? "translateY(0)" : "translateY(20px)",
             transition: "opacity 0.6s ease, transform 0.6s ease",
           }}
         >
-          Work Experience
+          Selected Work
         </h2>
 
         <div
