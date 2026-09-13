@@ -65,6 +65,7 @@ export default function Nav() {
                 {[
                   ["About", "/#about"],
                   ["Work", "/#work"],
+                  ["Products", "/#products"],
                   ["Contact", "/#contact"],
                 ].map(([label, href]) => (
                   <a key={label} href={href} className="nav-link">
