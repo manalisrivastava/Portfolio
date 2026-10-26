@@ -7,20 +7,20 @@ import { useEffect, useRef, useState } from "react";
 const caseStudies: CaseStudyCardType[] = [
   {
     slug: "mbk",
-    title: "MBK: Internal Tool Development and Pipeline Design",
-    oneLiner: "Led the development of an internal operations tool and redesigned the client pipeline for a £250K+ regulated business serving 14,000+ clients. Mapped 15+ CRM data dependencies, removed key manual bottlenecks, and enabled £100K+ in retention revenue.",
-    tags: ["Product Discovery", "Product Strategy & Prioritisation", "Internal Tools & Workflow Design", "Cross-Functional Leadership"],
+    title: "MBK: Replacing scattered client workflows with one CRM",
+    oneLiner: "Led a CRM transformation for a regulated consultancy, from discovery to rollout.",
+    tags: ["Digital Transformation", "Delivery Governance"],
     thumbnail: "/images/MBK-card-new.png.png",
-    date: "Jan 2026 - Present",
+    date: "Jan 2026 – Aug 2026",
     bold: true,
   },
   {
     slug: "shasymitra",
-    title: "ShasyMitra: Scaling an Agtech Startup from 0 to £870K ARR",
-    oneLiner: "Architected a hybrid \"phygital\" agtech ecosystem combining vernacular advisory apps with physical retail hubs to serve 21,000+ farmers across 5 states.",
-    tags: ["Product Discovery", "0-to-1", "Go-to-Market Strategy", "Ecosystem Strategy", "Phygital"],
+    title: "ShasyMitra: Earning farmers' trust before asking for a sale",
+    oneLiner: "Founded and built an AI-enabled advisory and payments platform for farmers in India.",
+    tags: ["0-to-1", "Applied AI"],
     thumbnail: "/images/shasymitra-card.png.png",
-    date: "Mar 2022 - Jun 2024",
+    date: "Mar 2022 – Jun 2024",
     bold: true,
   },
   {
@@ -29,8 +29,17 @@ const caseStudies: CaseStudyCardType[] = [
     oneLiner: "Built a resilient computer-vision and advisory system using Human-in-the-Loop (HITL) validation, offline-first data caching, and narrow MVP scoping to safely scale diagnostic tools for underserved rural markets.",
     tags: ["Applied AI", "Technical Architecture", "Risk Mitigation", "Offline-First UX"],
     thumbnail: "/images/shasymitra-ai-card.png.png",
-    date: "Mar 2022 - Jun 2024",
+    date: "Mar 2022 – Jun 2024",
     bold: true,
+  },
+  {
+    slug: "asha",
+    title: "Asha: Launching a programme for rural women entrepreneurs",
+    oneLiner: "Led the launch and digital rollout of an entrepreneurship programme for a non-profit.",
+    tags: ["Programme Delivery", "Digital Adoption"],
+    thumbnail: "/images/asha-card.png",
+    date: "Jan 2021 – Feb 2022",
+    bold: false,
   },
 ];
 
