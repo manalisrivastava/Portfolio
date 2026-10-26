@@ -2,79 +2,26 @@
 
 import { useRef, useEffect, useState } from "react";
 
-const skills = [
+const principles = [
   {
-    title: "Stakeholder Management",
-    description: "I align cross-functional teams, manage competing priorities, and ensure every decision is grounded in shared context across engineering, design, and business.",
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="10" fill="var(--color-accent-soft)" />
-        <circle cx="20" cy="14" r="4" stroke="var(--color-accent)" strokeWidth="1.8" fill="none" />
-        <circle cx="12" cy="18" r="3" stroke="var(--color-accent)" strokeWidth="1.6" fill="none" />
-        <circle cx="28" cy="18" r="3" stroke="var(--color-accent)" strokeWidth="1.6" fill="none" />
-        <path d="M8 29c0-3 2-4.5 4-4.5s3.5 1 4 2" stroke="var(--color-accent)" strokeWidth="1.6" strokeLinecap="round" fill="none" />
-        <path d="M24 26.5c.5-1 2-2 4-2s4 1.5 4 4.5" stroke="var(--color-accent)" strokeWidth="1.6" strokeLinecap="round" fill="none" />
-        <path d="M14 30c0-3.5 2.5-5.5 6-5.5s6 2 6 5.5" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round" fill="none" />
-      </svg>
-    ),
+    title: "Discovery before building.",
+    description: "I talk to the people closest to the problem before anything gets built.",
   },
   {
-    title: "No Code",
-    description: "I build and iterate on digital products using no-code tools, reducing time-to-market and validating ideas without engineering overhead.",
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="10" fill="var(--color-accent-soft)" />
-        <path d="M15 15l-5 5 5 5" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M25 15l5 5-5 5" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M22 13l-4 14" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round" />
-      </svg>
-    ),
+    title: "Visibility before automation.",
+    description: "You can't automate what you can't see, so I map the process first.",
   },
   {
-    title: "MVP",
-    description: "I scope and ship minimum viable products that test real hypotheses fast, cutting waste and generating learnings before full investment.",
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="10" fill="var(--color-accent-soft)" />
-        <path d="M20 10l2.5 7h7.5l-6 4.5 2.5 7L20 25l-6.5 3.5 2.5-7L10 17h7.5L20 10z" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-      </svg>
-    ),
+    title: "Trust before transactions.",
+    description: "People adopt what they trust. I earn that before asking for anything.",
   },
   {
-    title: "Product Management",
-    description: "I own the full product lifecycle, from discovery to delivery, balancing user needs, technical constraints, and business goals.",
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="10" fill="var(--color-accent-soft)" />
-        <rect x="10" y="10" width="9" height="9" rx="2" stroke="var(--color-accent)" strokeWidth="1.8" fill="none" />
-        <rect x="21" y="10" width="9" height="9" rx="2" stroke="var(--color-accent)" strokeWidth="1.8" fill="none" />
-        <rect x="10" y="21" width="9" height="9" rx="2" stroke="var(--color-accent)" strokeWidth="1.8" fill="none" />
-        <rect x="21" y="21" width="9" height="9" rx="2" stroke="var(--color-accent)" strokeWidth="1.8" fill="none" />
-      </svg>
-    ),
+    title: "Constraints are inputs.",
+    description: "Budgets, regulation and limits shape a better solution, not a worse one.",
   },
   {
-    title: "Product Discovery",
-    description: "I run structured discovery to surface the right problems, using interviews, journey mapping, and rapid prototyping to validate before building.",
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="10" fill="var(--color-accent-soft)" />
-        <circle cx="18" cy="18" r="7" stroke="var(--color-accent)" strokeWidth="1.8" fill="none" />
-        <path d="M23 23l5.5 5.5" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    title: "Prioritisation",
-    description: "I make clear, defensible decisions about what to build next using frameworks like RICE and opportunity scoring to align teams around the highest-impact work.",
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="10" fill="var(--color-accent-soft)" />
-        <path d="M12 14h16" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" />
-        <path d="M12 20h11" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" />
-        <path d="M12 26h7" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
+    title: "Build the MVP, then decide.",
+    description: "I use AI coding tools to turn ideas into working MVPs fast, so decisions come from real feedback, not slides.",
   },
 ];
 
@@ -90,7 +37,7 @@ export default function PrimarySkills() {
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.05 }
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
@@ -99,24 +46,9 @@ export default function PrimarySkills() {
   return (
     <section
       ref={sectionRef}
-      style={{ padding: "96px 0", borderTop: "1px solid var(--color-border)", position: "relative", overflow: "hidden" }}
+      style={{ padding: "96px 0", borderTop: "1px solid var(--color-border)" }}
     >
-      {/* Floating circles */}
-      <div style={{
-        position: "absolute", width: "260px", height: "260px",
-        top: "-60px", right: "-60px", borderRadius: "50%",
-        background: "#E84714", opacity: 0.08, zIndex: 0,
-        animation: "floatA 8s ease-in-out infinite",
-      }} />
-      <div style={{
-        position: "absolute", width: "140px", height: "140px",
-        bottom: "40px", left: "-40px", borderRadius: "50%",
-        background: "#E84714", opacity: 0.07, zIndex: 0,
-        animation: "floatB 10s ease-in-out infinite",
-        animationDelay: "1.5s",
-      }} />
-
-      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 32px", position: "relative", zIndex: 1 }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 32px" }}>
         <h2
           style={{
             fontFamily: "var(--font-instrument-serif, 'Instrument Serif', Georgia, serif)",
@@ -128,63 +60,30 @@ export default function PrimarySkills() {
             letterSpacing: "-0.01em",
             opacity: visible ? 1 : 0,
             transform: visible ? "translateY(0)" : "translateY(20px)",
-            transition: "opacity 0.6s ease, transform 0.6s ease",
+            transition: "opacity 0.55s ease, transform 0.55s ease",
           }}
         >
-          Primary Skills
+          How I Work
         </h2>
 
+        {/* 3 + 2 centred layout */}
         <div
-          className="primary-skills-grid"
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gap: "40px",
             opacity: visible ? 1 : 0,
-            transform: visible ? "translateY(0)" : "translateY(30px)",
-            transition: "opacity 0.8s ease 0.1s, transform 0.8s ease 0.1s",
+            transform: visible ? "translateY(0)" : "translateY(20px)",
+            transition: "opacity 0.65s ease 0.08s, transform 0.65s ease 0.08s",
           }}
         >
-          {skills.map((skill) => (
-            <div
-              key={skill.title}
-              style={{
-                display: "flex",
-                gap: "20px",
-                alignItems: "flex-start",
-                padding: "28px",
-                borderRadius: "16px",
-              }}
-              className="primary-skill-card"
-            >
-              <div style={{ flexShrink: 0, marginTop: "2px" }}>{skill.icon}</div>
-              <div>
-                <h3
-                  className="psk-title"
-                  style={{
-                    fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
-                    fontSize: "17px",
-                    fontWeight: 700,
-                    marginBottom: "8px",
-                    lineHeight: 1.3,
-                  }}
-                >
-                  {skill.title}
-                </h3>
-                <p
-                  className="psk-desc"
-                  style={{
-                    fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
-                    fontSize: "14px",
-                    lineHeight: 1.7,
-                    margin: 0,
-                  }}
-                >
-                  {skill.description}
-                </p>
-              </div>
-            </div>
-          ))}
+          <div className="hiw-row hiw-row-3" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "24px", marginBottom: "24px" }}>
+            {principles.slice(0, 3).map((p) => (
+              <PrincipleCard key={p.title} {...p} />
+            ))}
+          </div>
+          <div className="hiw-row hiw-row-2" style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: "24px", maxWidth: "calc(66.66% - 8px)", margin: "0 auto" }}>
+            {principles.slice(3).map((p) => (
+              <PrincipleCard key={p.title} {...p} />
+            ))}
+          </div>
         </div>
       </div>
 
@@ -199,25 +98,56 @@ export default function PrimarySkills() {
         .primary-skill-card:hover {
           background: var(--color-accent-soft);
           border-color: var(--color-accent);
-          transform: translateY(-6px);
-          box-shadow: 0 12px 40px rgba(232,71,20,0.12);
+          transform: translateY(-4px);
+          box-shadow: 0 8px 32px rgba(232,71,20,0.10);
         }
-        @keyframes floatA {
-          0%, 100% { transform: translate(0px, 0px); }
-          40%       { transform: translate(-14px, -22px); }
-          70%       { transform: translate(10px, -10px); }
-        }
-        @keyframes floatB {
-          0%, 100% { transform: translate(0px, 0px); }
-          35%       { transform: translate(16px, -16px); }
-          65%       { transform: translate(-10px, 12px); }
+        @media (prefers-reduced-motion: reduce) {
+          .primary-skill-card { transition: none !important; }
+          .primary-skill-card:hover { transform: none !important; }
         }
         @media (max-width: 768px) {
-          .primary-skills-grid {
+          .hiw-row-3, .hiw-row-2 {
             grid-template-columns: 1fr !important;
+            max-width: 100% !important;
           }
         }
       `}</style>
     </section>
+  );
+}
+
+function PrincipleCard({ title, description }: { title: string; description: string }) {
+  return (
+    <div
+      className="primary-skill-card"
+      style={{
+        padding: "28px 24px",
+        borderRadius: "16px",
+      }}
+    >
+      <h3
+        className="psk-title"
+        style={{
+          fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
+          fontSize: "16px",
+          fontWeight: 700,
+          marginBottom: "10px",
+          lineHeight: 1.3,
+        }}
+      >
+        {title}
+      </h3>
+      <p
+        className="psk-desc"
+        style={{
+          fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
+          fontSize: "14px",
+          lineHeight: 1.7,
+          margin: 0,
+        }}
+      >
+        {description}
+      </p>
+    </div>
   );
 }

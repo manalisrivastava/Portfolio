@@ -10,13 +10,17 @@ export default function Hero() {
           from { opacity: 0; transform: translateY(20px); }
           to   { opacity: 1; transform: translateY(0); }
         }
+        @media (prefers-reduced-motion: reduce) {
+          .hero-line, .hero-photo-col { animation: none !important; opacity: 1 !important; transform: none !important; }
+        }
         .hero-line {
           opacity: 0;
           animation: fadeUp 0.65s cubic-bezier(0.22,1,0.36,1) forwards;
         }
         .hero-line:nth-child(1) { animation-delay: 0.05s; }
         .hero-line:nth-child(2) { animation-delay: 0.18s; }
-        .hero-line:nth-child(3) { animation-delay: 0.30s; }
+        .hero-line:nth-child(3) { animation-delay: 0.28s; }
+        .hero-line:nth-child(4) { animation-delay: 0.38s; }
 
         @keyframes photoReveal {
           from { opacity: 0; transform: translateY(16px); }
@@ -26,17 +30,6 @@ export default function Hero() {
           opacity: 0;
           animation: photoReveal 0.8s cubic-bezier(0.22,1,0.36,1) forwards;
           animation-delay: 0.15s;
-        }
-
-        @keyframes floatCard {
-          0%, 100% { transform: translateY(0px); }
-          50%       { transform: translateY(-7px); }
-        }
-        .hero-card {
-          animation: floatCard 4s ease-in-out infinite;
-          background: var(--color-surface);
-          border: 1px solid var(--color-border);
-          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
         .hero-products-wrap {
@@ -53,17 +46,38 @@ export default function Hero() {
           overflow: visible;
         }
 
+        .hero-buttons {
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .hero-btn-primary, .hero-btn-outline {
+          white-space: nowrap;
+        }
+
         @media (max-width: 900px) {
           .hero-inner {
             flex-direction: column !important;
-            gap: 56px !important;
+            gap: 48px !important;
             padding: 40px 24px 60px !important;
           }
           .hero-photo-col {
             width: 100% !important;
-            height: 380px !important;
+            height: 340px !important;
           }
           .hero-name { font-size: 44px !important; line-height: 1.12 !important; }
+          .hero-headline { font-size: 38px !important; }
+        }
+        @media (max-width: 400px) {
+          .hero-buttons {
+            flex-direction: column !important;
+            gap: 10px !important;
+          }
+          .hero-btn-primary, .hero-btn-outline {
+            width: 100% !important;
+            text-align: center !important;
+            justify-content: center !important;
+          }
         }
       `}</style>
 
@@ -76,8 +90,7 @@ export default function Hero() {
             justifyContent: "space-between", gap: "48px",
           }}
         >
-
-          {/* ── Left: text ── */}
+          {/* Left: text */}
           <div style={{ flex: "1 1 0", minWidth: 0 }}>
 
             <h1 className="hero-line hero-name" style={{
@@ -89,16 +102,13 @@ export default function Hero() {
               <span style={{ color: "var(--color-accent)" }}>Manali</span>
             </h1>
 
-            <p className="hero-line" style={{
+            <p className="hero-line hero-headline" style={{
               fontFamily: "var(--font-instrument-serif, 'Instrument Serif', Georgia, serif)",
-              fontSize: "58px", fontWeight: 400, color: "var(--color-text)",
-              lineHeight: 1.1, marginBottom: "40px",
+              fontSize: "52px", fontWeight: 400, color: "var(--color-text)",
+              lineHeight: 1.1, marginBottom: "20px",
             }}>
               I turn messy problems into{" "}
-              <span
-                className="hero-products-wrap"
-                style={{ fontStyle: "italic" }}
-              >
+              <span className="hero-products-wrap" style={{ fontStyle: "italic" }}>
                 products
                 <svg
                   className="hero-products-underline"
@@ -115,13 +125,22 @@ export default function Hero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </span>{" "}users actually trust.
+              </span>{" "}people trust.
+            </p>
+
+            <p className="hero-line" style={{
+              fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
+              fontSize: "17px", color: "var(--color-muted)",
+              lineHeight: 1.65, marginBottom: "36px", maxWidth: "480px",
+            }}>
+              Product and project manager working between business and technology. Former founder, based in Birmingham.
             </p>
 
             <div className="hero-line" style={{ display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
-              <div style={{ display: "flex", gap: "12px" }}>
+              <div className="hero-buttons">
                 <a
                   href="#work"
+                  className="hero-btn-primary"
                   style={{
                     background: "var(--color-accent)", color: "#fff",
                     padding: "13px 32px", borderRadius: "100px",
@@ -140,6 +159,7 @@ export default function Hero() {
                 </a>
                 <a
                   href="#contact"
+                  className="hero-btn-outline"
                   style={{
                     color: "var(--color-accent)", padding: "13px 32px", borderRadius: "100px",
                     fontSize: "14px", fontWeight: 500, textDecoration: "none",
@@ -153,23 +173,31 @@ export default function Hero() {
                   Get in touch
                 </a>
               </div>
+
               <span style={{
                 display: "inline-flex", alignItems: "center", gap: "6px",
                 fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
                 fontSize: "12px", color: "var(--color-muted)",
               }}>
                 <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#22c55e", display: "inline-block", flexShrink: 0 }} />
-                Open to roles in the UK
+                Open to product, project and transformation roles in the UK
               </span>
+
+              <p style={{
+                fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
+                fontSize: "12px", color: "var(--color-muted)", margin: 0,
+                letterSpacing: "0.01em",
+              }}>
+                Founded an AI agtech startup · Led a CRM transformation · Built an open-source AI tool
+              </p>
             </div>
           </div>
 
-          {/* ── Right: photo + floating cards ── */}
+          {/* Right: illustration */}
           <div
             className="hero-photo-col"
             style={{ flex: "0 0 auto", width: "500px", height: "520px", position: "relative", flexShrink: 0 }}
           >
-            {/* Illustration — already contains the floating cards baked in */}
             <Image
               src="/images/hero.illustration.png.png"
               alt="Manali Srivastava — product manager illustration"
@@ -177,9 +205,7 @@ export default function Hero() {
               style={{ objectFit: "contain", objectPosition: "center center" }}
               priority
             />
-
           </div>
-
         </div>
       </section>
     </>
