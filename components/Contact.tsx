@@ -69,7 +69,7 @@ export default function Contact() {
             ...reveal(0.1),
           }}
         >
-          I&apos;m currently open to product roles in the UK. The fastest way to reach me is email.
+          I&apos;m currently open to new opportunities. The fastest way to reach me is email.
         </p>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginBottom: "64px", ...reveal(0.2) }}>
