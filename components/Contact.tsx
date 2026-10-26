@@ -64,15 +64,15 @@ export default function Contact() {
             fontSize: "17px",
             color: "rgba(255,255,255,0.6)",
             lineHeight: 1.65,
-            marginBottom: "40px",
+            marginBottom: "48px",
             maxWidth: "480px",
             ...reveal(0.1),
           }}
         >
-          I&apos;m open to product, project and digital transformation roles in the UK. The fastest way to reach me is email.
+          I&apos;m currently open to product roles in the UK. The fastest way to reach me is email.
         </p>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginBottom: "32px", ...reveal(0.2) }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px", marginBottom: "64px", ...reveal(0.2) }}>
           <ContactRow
             label="Email"
             href={`mailto:${siteData.email}`}
@@ -83,30 +83,6 @@ export default function Contact() {
             href={siteData.linkedinUrl}
             value={siteData.linkedin}
           />
-        </div>
-
-        {/* CV download — TODO: add CV PDF to /public */}
-        <div style={{ marginBottom: "64px", ...reveal(0.25) }}>
-          <a
-            href="/Manali_Srivastava_CV.pdf"
-            download
-            style={{
-              display: "inline-flex", alignItems: "center", gap: "8px",
-              padding: "11px 24px", borderRadius: "100px",
-              border: "1.5px solid rgba(255,255,255,0.3)",
-              color: "rgba(255,255,255,0.8)", textDecoration: "none",
-              fontFamily: "var(--font-inter, 'Inter', system-ui, sans-serif)",
-              fontSize: "13px", fontWeight: 500,
-              transition: "border-color 0.15s, color 0.15s",
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.7)"; e.currentTarget.style.color = "#fff"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; e.currentTarget.style.color = "rgba(255,255,255,0.8)"; }}
-          >
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M7 2v7M4 6.5l3 3 3-3M2 11h10" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            Download CV
-          </a>
         </div>
 
         <div

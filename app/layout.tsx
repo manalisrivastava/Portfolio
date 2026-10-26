@@ -19,17 +19,13 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Manali Srivastava | Product & Project Manager, AI & Digital Transformation",
+  title: "Manali Srivastava — Product Manager",
   description:
-    "Product and project manager bridging business and technology. Former founder, now leading AI-enabled digital transformation. Based in Birmingham, UK.",
+    "Product manager building at the intersection of payments, compliance, and AI. Co-founder turned PM with experience shipping AI-enabled and FCA-regulated products.",
   openGraph: {
-    title: "Manali Srivastava | Product & Project Manager, AI & Digital Transformation",
-    description: "Product · Project · AI · Digital Transformation",
+    title: "Manali Srivastava — Product Manager",
+    description: "Payments · Compliance · AI",
     images: ["/og-image.png"],
-  },
-  twitter: {
-    title: "Manali Srivastava | Product & Project Manager, AI & Digital Transformation",
-    description: "Product · Project · AI · Digital Transformation",
   },
 };
 
