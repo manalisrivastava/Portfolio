@@ -39,7 +39,7 @@ const caseStudies: CaseStudyCardType[] = [
     tags: ["Programme Delivery", "Digital Adoption"],
     thumbnail: "/images/asha-card.png",
     date: "Jan 2021 – Feb 2022",
-    bold: false,
+    bold: true,
   },
 ];
 
