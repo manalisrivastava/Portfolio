@@ -115,7 +115,7 @@ export default function Hero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </span>{" "}users actually trust.
+              </span>{" "}users trust.
             </p>
 
             <div className="hero-line" style={{ display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
@@ -159,7 +159,7 @@ export default function Hero() {
                 fontSize: "12px", color: "var(--color-muted)",
               }}>
                 <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#22c55e", display: "inline-block", flexShrink: 0 }} />
-                Open to roles in the UK
+                Open to new opportunities
               </span>
             </div>
           </div>
