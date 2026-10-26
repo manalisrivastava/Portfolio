@@ -117,7 +117,7 @@ export default function CaseStudyGrid() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateColumns: "repeat(2, 1fr)",
             gap: "24px",
             alignItems: "stretch",
             opacity: isVisible ? 1 : 0,
